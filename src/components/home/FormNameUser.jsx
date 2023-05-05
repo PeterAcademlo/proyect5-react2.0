@@ -18,7 +18,7 @@ import { useNavigate } from "react-router-dom"
         
             return (
             <form className="form" onSubmit={handleSubmit}>
-                <input className="form_input" ref={inputName} placeholder="Enter your name here" type="text" />
+                <input className="form_input" ref={inputName} placeholder="comenzamos   aqui" type="text" />
                     <button className="form_button" >Start</button>
             </form>
         )

@@ -1,37 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
 .PokeInfo{
     display: flex;
     flex-direction: column;
     background-color:  #E5E5E5;
+    font-family: 'Lobster Two', cursive;
 }
   .pokeInfo_rojo{
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
+    flex-direction: column;
     width: 100%;
-    height: 70px;
+    height: 150px;
     background-color: red;
-    position: absolute;
-  }
-  .pokeInfo_negro{
-    background-color: black;
-    height: 50px;
-    width: 100%;
-   
-  }
-  .PokeInfo_img {
-    top: 10px; 
-    left: 2px; 
-    height: 50px;
-    width: 350px;
-    margin-top: 1em;
     position: relative;
   }
+  .pokeInfo_negro{
+    position: relative;
+    background-color: black;
+    height: 30px;
+    width: 100%;
+  }
+  .PokeInfo_img {
+    padding: 1rem;
+    padding-left: 2rem;
+    min-width: 260px;
+    max-width: 500px;
+  }
  .pokeInfo_card_arriba{
+  padding: .5rem;
+  border-radius: 1rem;
   margin-top: 2.5em;
   margin-bottom: 2.5em;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  -webkit-box-shadow: 0px 3px 13px -1px rgba(0,0,0,0.64);
-  -moz-box-shadow: 0px 3px 13px -1px rgba(0,0,0,0.64);
   box-shadow: 0px 3px 13px -1px rgba(0,0,0,0.64);
  }
   /* header */
@@ -43,7 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;  
-
+    box-shadow: -1px 3px 4px 0px rgba(123, 123, 123, 0.49);
   }
   .pokeInfoImg{
     width: 300px;
@@ -58,6 +63,8 @@
     flex-direction: column;
   }
   .pokeInfo_infoPolkeCard-title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.9rem;
     text-align: center;
     padding-top:2em;
     text-transform: capitalize;
@@ -135,13 +142,17 @@
 }
 .PokeInfo_title{
   text-align: center;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.7rem;
 }
 .pokeInfo_moves-list{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 1em;
+  padding: 1rem;
 }
 .pokeInfo_moves-Item{
   background-color: lightgray;

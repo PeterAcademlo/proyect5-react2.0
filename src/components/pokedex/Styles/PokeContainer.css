@@ -1,7 +1,62 @@
 .poke-container{
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1024px;
+    gap: 1rem;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center; 
+}
+
+
+/*error*/
+
+.pokeInfo_container-error{
+    background: rgb(195,195,195);
+    background: linear-gradient(0deg, rgba(195,195,195,1) 0%, rgba(255,255,255,1) 100%);
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5em;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pokeInfo_error{
+    max-width: 550px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    font-weight: 600;
+}
+.pokeInfo_error2{
+    max-width: 550px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem;
+    padding-top: 4rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.pokeinfo_img{
+    max-width: 500px;
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+@media (max-width: 800px){
+    .poke-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px){
+    .poke-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

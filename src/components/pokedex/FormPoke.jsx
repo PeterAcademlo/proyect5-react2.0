@@ -32,10 +32,10 @@ import './Styles/Formpoke.css'
                 <div className="form_poke">
                     <form className="form_poke-poke" onSubmit={handleSubmit}>
                         <input className="form_poke_input" ref={inputPoke} type="text" />
-                        <button className="form_poke_btn">Search</button>
+                        <button className="form_poke_btn">buscar</button>
                     </form>
                     <select className="form_poke_select" onChange={handleChange}>
-                        <option className="form_poke_option" value={urlBase}>All Pokemons</option>
+                        <option className="form_poke_option" value={urlBase}>Mas Pokemones</option>
                         {
                             types?.results.map(type => (
                                 <option className="form_poke_option_2"

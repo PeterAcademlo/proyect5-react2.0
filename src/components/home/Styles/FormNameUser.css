@@ -4,7 +4,7 @@
     align-items: center;
 }
 .form_input{
-    width: 200px;
+    width: 205px;
     height: 42px;
     font-size: 16px;
     padding-left: 1em;
@@ -13,6 +13,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     font-size: italic;
+    font-family: 'Courier New', Courier, monospace;
     transition: transform 200ms ease;
 }
 .form_input:hover{

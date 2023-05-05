@@ -16,12 +16,18 @@ const PokeInfo = () => {
         <div className="PokeInfo">
             {
                 hasError
-                    ? <h1>this pokemon is not exist ❌</h1>
-                    : <>
+                    ? 
+                    <div className="pokeInfo_container-error">
+                        <h1 className="pokeInfo_error">LO SIENTO, PERO ESE POKEMON NO EXISTE ❌</h1>
+                        <img className='pokeinfo_img' src=".//pokemon-carga.png" alt="" />
+                        <h1 className="pokeInfo_error2">por favor, verifique que el nombre este bien escrito</h1>
+                    </div>
+                     : <>
 
                         <div className="pokeInfo_top-1">
-                            <div className="pokeInfo_rojo"></div>
+                            <div className="pokeInfo_rojo">
                             <img className='PokeInfo_img' src=".//pokedexx.png" alt="" />
+                            </div>
                             <div className="pokeInfo_negro"></div>
                         </div>
 

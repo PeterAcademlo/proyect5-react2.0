@@ -16,12 +16,12 @@ import PokeContainer from '../components/pokedex/PokeContainer'
         return (
             <div >
             <header className='poq'>
-                <div className='poq_rojo'></div>
+                <div className='poq_rojo'>
                 <img className='poq_img' src=".//pokedexx.png" alt="" />
-                <div className='poq_negro'></div>
-
+                </div>
+                 <div className='poq_negro'></div>
             </header>
-            <p className='poq_p'><span className='poq_welcome'>Welcome {trainerName},</span><span> here you can find your favorite pokemon</span></p>
+            <p className='poq_p'><span className='poq_welcome'>INICIAMOS {trainerName},</span><span>encontra tu pokemon favorito</span></p>
             <FormPoke  urlBase={urlBase} setFormUrl={setFormUrl}/>
             <PokeContainer formUrl={formUrl} />
             </div>
